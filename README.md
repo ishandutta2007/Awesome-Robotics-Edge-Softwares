@@ -2,7 +2,16 @@
   <img src="assets/banner.svg" alt="Awesome Robotics Edge Softwares Banner" width="100%">
 </p>
 
-# 🤖 Awesome Robotics Edge Softwares [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Tracked Projects](https://img.shields.io/badge/Tracked%20Projects-45+-blueviolet.svg)](#-open-source-github-projects)
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awssome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=llat-square&logo=github" alt="Awesome"/></a><a href="htpps/://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Edge-Softwares/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robotics-Edge-Softwares?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Edge-Softwares/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Robotics-Edge-Softwares?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT"/></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+# 🤖 Awesome Robotics Edge Softwares
 
 > 🚀 **A curated directory of top SaaS platforms and open-source GitHub projects powering the next generation of Robotics Edge Software, Physical AI, and Real-Time Autonomous Systems.**
 
@@ -21,6 +30,8 @@
 - [🧩 Architecture Stack Comparison](#-architecture-stack-comparison)
 - [🔍 SEO & Industry Keywords](#-seo--industry-keywords)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support](#-support)
+- [📈 Star History](#--star-history)
 - [⚖️ Disclaimer & Safety Standards](#️-disclaimer--safety-standards)
 
 ---
@@ -236,6 +247,25 @@ Contributions from the robotics and edge computing community are warmly welcomed
    - Ensure SaaS starting tier prices and free tier limits are factual and verified.
    - For open-source repos, ensure you include the star badge with `style=social&color=white` pointing to the stargazers URL.
 4. **Submit a Pull Request** with a clear explanation of the changes.
+
+Check out our curated master index at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)! ⭐
+
+---
+
+## ☕ Support
+
+Thank you for exploring and utilizing this curated Robotics Edge Software directory! If you find this resource valuable for your research, robotics projects, or engineering teams:
+
+- ⭐ **Star this repository** to increase visibility and help others discover it.
+- 🔀 **Fork** it to keep your own reference and submit contributions.
+- 📢 **Share** with fellow robotics engineers, embedded developers, and autonomous systems architects.
+- 💖 **Buy me a coffee / Sponsor**: Show your appreciation and support ongoing open-source maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+##  Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Robotics-Edge-Softwares&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Robotics-Edge-Softwares&type=date&legend=top-left)
 
 ---
 
