@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="50%" stop-color="#7000FF" />
+      <stop offset="100%" stop-color="#FF007A" />
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0072FF" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7000FF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#B000FF" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f293d" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Filters for Glow & Shadows -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <!-- Embedded CSS Keyframe Animations -->
+    <style>
+      @keyframes dashFlow {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseRing {
+        0% { r: 18px; opacity: 0.9; }
+        50% { r: 48px; opacity: 0.2; }
+        100% { r: 18px; opacity: 0.9; }
+      }
+      @keyframes pulseRingLarge {
+        0% { r: 40px; opacity: 0.7; }
+        50% { r: 85px; opacity: 0.05; }
+        100% { r: 40px; opacity: 0.7; }
+      }
+      @keyframes floatOrb {
+        0% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-12px) translateX(8px); }
+        100% { transform: translateY(0px) translateX(0px); }
+      }
+      @keyframes nodeFlicker {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      @keyframes signalSweep {
+        0% { opacity: 0.2; transform: rotate(0deg); }
+        50% { opacity: 0.8; }
+        100% { opacity: 0.2; transform: rotate(360deg); }
+      }
+
+      .animated-circuit {
+        stroke-dasharray: 12, 12;
+        animation: dashFlow 20s linear infinite;
+      }
+      .circuit-fast {
+        stroke-dasharray: 8, 8;
+        animation: dashFlow 12s linear infinite reverse;
+      }
+      .pulsing-wave-1 {
+        animation: pulseRing 4s ease-in-out infinite;
+        transform-origin: 1040px 140px;
+      }
+      .pulsing-wave-2 {
+        animation: pulseRingLarge 6s ease-in-out infinite;
+        transform-origin: 1040px 140px;
+      }
+      .floating-element {
+        animation: floatOrb 8s ease-in-out infinite;
+      }
+      .flicker-1 { animation: nodeFlicker 3s ease-in-out infinite; }
+      .flicker-2 { animation: nodeFlicker 4s ease-in-out infinite 1s; }
+      .flicker-3 { animation: nodeFlicker 2.5s ease-in-out infinite 0.5s; }
+
+      /* Typography */
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        fill: #FFFFFF;
+        letter-spacing: -1px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        fill: #94A3B8;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        fill: #00F0FF;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #E2E8F0;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Outer Neon Frame Border -->
+  <rect width="1196" height="416" x="2" y="2" rx="15" fill="none" stroke="url(#primaryGlow)" stroke-width="1.5" stroke-opacity="0.35" />
+
+  <!-- ================= BACKGROUND DYNAMIC GRAPHICS ================= -->
+  <!-- Ambient Glow Cones -->
+  <circle cx="150" cy="80" r="140" fill="#00F0FF" opacity="0.07" filter="url(#neonGlow)" />
+  <circle cx="1040" cy="140" r="180" fill="#7000FF" opacity="0.12" filter="url(#neonGlow)" />
+  <circle cx="600" cy="380" r="160" fill="#FF007A" opacity="0.06" filter="url(#neonGlow)" />
+
+  <!-- Coordinate Edge Grid Overlay -->
+  <g opacity="0.15" stroke="#38BDF8" stroke-width="0.75">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    
+    <line x1="100" y1="0" x2="100" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="500" y1="0" x2="500" y2="420" />
+    <line x1="700" y1="0" x2="700" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1100" y1="0" x2="1100" y2="420" />
+  </g>
+
+  <!-- Animated Sensor Radar / Lidar Array at Right -->
+  <g id="radar-station">
+    <!-- Static concentric range rings -->
+    <circle cx="1040" cy="140" r="120" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="4,6" opacity="0.4" />
+    <circle cx="1040" cy="140" r="85" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.3" />
+    <circle cx="1040" cy="140" r="50" fill="none" stroke="#818CF8" stroke-width="1.2" opacity="0.5" />
+    
+    <!-- Pulsing wave elements -->
+    <circle class="pulsing-wave-2" cx="1040" cy="140" r="40" fill="none" stroke="#A855F7" stroke-width="1.8" />
+    <circle class="pulsing-wave-1" cx="1040" cy="140" r="20" fill="none" stroke="#00F0FF" stroke-width="2" />
+    <circle cx="1040" cy="140" r="6" fill="#00F0FF" filter="url(#subtleGlow)" />
+    
+    <!-- Sweep crosshair -->
+    <line x1="920" y1="140" x2="1160" y2="140" stroke="#38BDF8" stroke-width="0.8" opacity="0.35" />
+    <line x1="1040" y1="20" x2="1040" y2="260" stroke="#38BDF8" stroke-width="0.8" opacity="0.35" />
+  </g>
+
+  <!-- Animated Circuit & Data Flow Highways -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Pathway 1: Top Left to Radar -->
+    <path class="animated-circuit" d="M 60,40 L 220,40 L 280,100 L 760,100 L 820,140 L 980,140" stroke="#00F0FF" stroke-width="1.8" opacity="0.6" />
+    
+    <!-- Pathway 2: Bottom Center to Lidar Hub -->
+    <path class="circuit-fast" d="M 1120,380 L 1020,380 L 960,320 L 720,320 L 660,260 L 520,260" stroke="#FF007A" stroke-width="1.6" opacity="0.5" />
+    
+    <!-- Pathway 3: Cross link -->
+    <path class="animated-circuit" d="M 120,390 L 260,390 L 320,330 L 580,330" stroke="#7000FF" stroke-width="1.4" opacity="0.55" />
+  </g>
+
+  <!-- Glowing Edge Nodes (IoT / Robotic Microcontrollers) -->
+  <g>
+    <circle class="flicker-1" cx="280" cy="100" r="4.5" fill="#00F0FF" filter="url(#subtleGlow)" />
+    <circle class="flicker-2" cx="760" cy="100" r="4" fill="#38BDF8" filter="url(#subtleGlow)" />
+    <circle class="flicker-3" cx="820" cy="140" r="5" fill="#C084FC" filter="url(#subtleGlow)" />
+    <circle class="flicker-1" cx="960" cy="320" r="4.5" fill="#FF007A" filter="url(#subtleGlow)" />
+    <circle class="flicker-2" cx="660" cy="260" r="4" fill="#00F0FF" filter="url(#subtleGlow)" />
+    <circle class="flicker-3" cx="320" cy="330" r="4.5" fill="#A855F7" filter="url(#subtleGlow)" />
+  </g>
+
+  <!-- ================= FOREGROUND HERO CONTENT ================= -->
+  <!-- Main Content Shield (Protective semi-translucent backdrop ensuring 100% readability) -->
+  <g class="floating-element">
+    <rect x="52" y="55" width="760" height="230" rx="14" fill="#090d16" fill-opacity="0.78" stroke="#1E293B" stroke-width="1.2" filter="url(#cardShadow)" />
+  </g>
+
+  <!-- Top Category Tag / Eyebrow Pill -->
+  <g transform="translate(76, 76)">
+    <rect width="365" height="28" rx="14" fill="#0f172a" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="14" cy="14" r="5" fill="#00F0FF" filter="url(#subtleGlow)" />
+    <text x="28" y="19" class="badge-text" font-size="11">⚡ NEXT-GEN PHYSICAL AI &amp; ROBOTICS EDGE</text>
+  </g>
+
+  <!-- Primary Headline Title -->
+  <g transform="translate(76, 155)">
+    <text class="title-text" font-size="44">Awesome Robotics Edge</text>
+    <text class="title-text" x="515" font-size="44" fill="url(#primaryGlow)" filter="url(#subtleGlow)">Softwares</text>
+  </g>
+
+  <!-- Subtitle / Mission Statement -->
+  <g transform="translate(76, 196)">
+    <text class="subtitle-text" font-size="16">Curated ecosystem of Edge AI inference engines, real-time ROS 2 middleware,</text>
+    <text class="subtitle-text" y="24" font-size="16">deterministic microkernels, and hardware-agnostic physical AI platforms.</text>
+  </g>
+
+  <!-- Key Architecture Feature Badges (Bottom Row) -->
+  <g transform="translate(76, 245)">
+    <!-- Pill 1: Low-Latency IPC -->
+    <g transform="translate(0, 0)">
+      <rect width="168" height="30" rx="6" fill="url(#pillGrad)" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.4" />
+      <text x="12" y="20" class="pill-text">⚡ Sub-ms DDS &amp; IPC</text>
+    </g>
+
+    <!-- Pill 2: Vision-Language-Action -->
+    <g transform="translate(178, 0)">
+      <rect width="186" height="30" rx="6" fill="url(#pillGrad)" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0.4" />
+      <text x="12" y="20" class="pill-text">🧠 On-Device VLA Models</text>
+    </g>
+
+    <!-- Pill 3: Deterministic Kernel -->
+    <g transform="translate(374, 0)">
+      <rect width="186" height="30" rx="6" fill="url(#pillGrad)" stroke="#C084FC" stroke-width="0.8" stroke-opacity="0.4" />
+      <text x="12" y="20" class="pill-text">🛡️ Deterministic Kernels</text>
+    </g>
+
+    <!-- Pill 4: Cloud-to-Edge Fleet -->
+    <g transform="translate(570, 0)">
+      <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#F43F5E" stroke-width="0.8" stroke-opacity="0.4" />
+      <text x="12" y="20" class="pill-text">🛰️ Fleet RobOps</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Status Bar -->
+  <g transform="translate(52, 335)">
+    <!-- Metric Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="42" rx="8" fill="#0c1322" stroke="#1E293B" stroke-width="1" />
+      <text x="14" y="19" font-family="sans-serif" font-size="10" fill="#64748B" font-weight="700">COMPUTE STRATEGY</text>
+      <text x="14" y="34" font-family="sans-serif" font-size="12" fill="#38BDF8" font-weight="700">Zero Cloud Dependency</text>
+    </g>
+    <!-- Metric Pill 2 -->
+    <g transform="translate(225, 0)">
+      <rect width="210" height="42" rx="8" fill="#0c1322" stroke="#1E293B" stroke-width="1" />
+      <text x="14" y="19" font-family="sans-serif" font-size="10" fill="#64748B" font-weight="700">MIDDLEWARE STANDARD</text>
+      <text x="14" y="34" font-family="sans-serif" font-size="12" fill="#A855F7" font-weight="700">ROS 2 • Zenoh • DDS</text>
+    </g>
+    <!-- Metric Pill 3 -->
+    <g transform="translate(450, 0)">
+      <rect width="210" height="42" rx="8" fill="#0c1322" stroke="#1E293B" stroke-width="1" />
+      <text x="14" y="19" font-family="sans-serif" font-size="10" fill="#64748B" font-weight="700">DEPLOYMENT TARGET</text>
+      <text x="14" y="34" font-family="sans-serif" font-size="12" fill="#F43F5E" font-weight="700">MCU to GPU Edge Box</text>
+    </g>
+    <!-- Right Metric / Live Status Pill -->
+    <g transform="translate(860, 0)">
+      <rect width="235" height="42" rx="8" fill="#0c1322" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.3" />
+      <circle cx="22" cy="21" r="5" fill="#10B981" filter="url(#subtleGlow)" />
+      <text x="36" y="19" font-family="sans-serif" font-size="10" fill="#64748B" font-weight="700">SYSTEM STATUS</text>
+      <text x="36" y="34" font-family="sans-serif" font-size="12" fill="#10B981" font-weight="700">Production Ready &amp; Curated</text>
+    </g>
+  </g>
+</svg>
