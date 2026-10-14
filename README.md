@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awssome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=llat-square&logo=github" alt="Awesome"/></a><a href="htpps/://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Edge-Softwares/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robotics-Edge-Softwares?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Edge-Softwares/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robotics-Edge-Softwares?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Robotics-Edge-Softwares/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Robotics-Edge-Softwares?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT"/></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -84,11 +84,11 @@ The table below lists leading commercial SaaS and enterprise-supported platforms
 
 ## ⭐ Open-Source GitHub Projects
 
-Explore the open-source software driving autonomous edge intelligence. Every project below includes its live GitHub star count badge linking directly to the repository's stargazers page.
+Explore the open-source software driving autonomous edge intelligence. Every project below includes its live GitHub Stars_Count badge linking directly to the repository's stargazers page.
 
 ### 🏆 Ranked Open-Source Repositories (by Stars)
 
-> **Sorted strictly by GitHub Star Count in Descending Order.**
+> **Sorted strictly by GitHub Stars_Count in Descending Order.**
 
 1. 🤖 **[LeRobot](https://github.com/huggingface/lerobot)** [![Stars](https://img.shields.io/github/stars/huggingface/lerobot?style=social&color=white)](https://github.com/huggingface/lerobot/stargazers)  
    Hugging Face's state-of-the-art PyTorch library for physical AI and real-world robotics. Supplies pretrained Vision-Language-Action (VLA) weights, imitation learning pipelines, and edge inference optimization on real robotic arms and mobile manipulators.
@@ -245,7 +245,7 @@ Contributions from the robotics and edge computing community are warmly welcomed
 2. **Add or Update Entries** in `README.md` following the tabular or ranked format.
 3. **Verify Data Integrity**:
    - Ensure SaaS starting tier prices and free tier limits are factual and verified.
-   - For open-source repos, ensure you include the star badge with `style=social&color=white` pointing to the stargazers URL.
+   - For open-source repos, ensure you include the Stars_Badge with `style=social&color=white` pointing to the stargazers URL.
 4. **Submit a Pull Request** with a clear explanation of the changes.
 
 Check out our curated master index at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)! ⭐
